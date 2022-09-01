@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href= "styles/style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="root">
+            <img class="loader" src="./img/loader.gif" alt="loader" />
+        </div>
+        <div class="popup" id="popup">
+            <form action="GET" class="form" id="form">
+                <div class="form-group">
+                    <input type="text" value="" name="city" class="form-input" id="text-input" placeholder="Minsk" required/>
+                    <input type="submit" class="form-submit" id="submit-button" value="OK"/>
+                </div>
+            </form>
+            <div class="popup-close" id="close">
+                <span></span>
+            </div>
+        </div>
+        <div class="quotes">
+            <a href="https://uaforizm.com/" title="Цитата дня" target="_blank" rel="noopener"><img loading="lazy" src="https://uaforizm.com/inf/?color=blue" alt="Цитата дня" /></a>
+        </div>
+<!--        <div id="map" style="width: 600px; height: 200px"></div>-->
+    </div>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=8c02b882-7e64-480d-81cc-8befa034f663&lang=ru_RU" type="text/javascript">  </script> -->
+<script src="js/index.js"></script>
+</body>
+</html>
